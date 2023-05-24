@@ -1,0 +1,81 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+
+}
+.TEXT{
+    width: 320px;
+    height: 800px;
+    background: rgb(241, 238, 238);
+    color: rgb(7, 7, 7);
+    top: 50%; 
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+
+}
+.TEXT .logo{
+
+    width: 50px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% -50px);
+
+
+}
+.TEXT h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+
+}
+.TEXT h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+
+}
+
+.TEXT label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+.TEXT  input{
+    width: 100%;
+    margin-bottom: 20px;
+   
+    
+}
+.TEXT  input [type="text"], .login-box input [type="password"] {
+border: none;
+outline: none;
+border-bottom: 1px solid rgb(255, 255, 255);
+background: transparent;
+height: 40px;
+color: rgb(15, 14, 15);
+font-size: 16px;
+    
+}
+.TEXT input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(12, 12, 12);
+    color: #000;
+}
+
+.TEXT  {
+    color: rgba(0, 0, 0, 0.856);
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Register RadCook</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="archivos/css/estilos.css">
+</head>
+<body>
+<section>       
+            <div
+             class="contenedor__todo" id="contenedor_todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
+                
+                <div class="contenedor__login-register">
+                   
+                    <form action="" class="formulario__login" id="formulariologin">
+
+                        <h2>Iniciar Sesión</h2>
+                            <div class="form box" id="grupo__correo"> 
+                                <label for="correo" class="formulario__label"></label>
+                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Correo Electronico">
+                                <small class="error-text">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</small>
+                            </div>
+                           
+                                <div class="form box" id="grupo__contraseña"> 
+                                    <label for="password"></label>
+                                    <input type="password" class="formulario__input" name="password" id="password" placeholder="Contraseña">
+                                    <small class="error-text">La contraseña tiene que ser de 4 a 12 dígitos</small>
+
+                                </div>
+                                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                    <button type="submit" class="formulario__btn">Entrar</button>
+                        </div>
+
+                        </form>
+                        
+                    <form action="archivos/PHP/registro.php"method="post"class="formulario__register" id="formulariologin">
+                        <div class="form-header">
+                        <h2>Regístrarse</h2>
+                    </div>
+
+                            <div class="form box" id="grupo__nombre">
+                                <label for="nombre"></label>
+                                <input type="text" name="name" id="nombre" placeholder="Nombres" required>
+                        <small class="error-text">El nombre no debe llevar numeros ni signos.</small>
+                        </div>
+
+                        <div class="form box" id="grupo__apellido">
+                            <label for="apellido"></label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Apellidos" required>
+                    <small class="error-text">El apellido no debe llevar numeros ni signos.</small>
+                    </div>
+
+                    
+                    <div class="form box" id="grupo__usuario">
+                        <label for="usuario"></label>
+                        <input type="text" name="usuario" id="usuario" placeholder="Usuario" required>
+                <small class="error-text">El usuario no debe llevar numeros ni signos.</small>
+                </div>
+
+                <div class="form box" id="grupo__nacimiento">
+                <label for="fecha de nacimiento">fecha de nacimiento</label>
+            <input type="date" name="fecha" id="fecha" placeholder=""required>
+        </div>
+
+                        <div class="form box" id="grupo__numero">
+                            <label for="telefono"></label>
+                            <input type="text" name="telefono" id="telefono" placeholder="Numero celular" required>
+                    <small class="error-text">El celular solo puede contener numeros y el maximo son 10 dígitos.</small>
+                    </div>
+
+                    <div class="form box" id="grupo__correo2">
+                        <label for="correo2"></label>
+                        <input type="email" name="correo2" id="correo2" placeholder="Correo" required>
+                <small class="error-text">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</small>
+                </div>
+
+                <div class="form box" id="grupo__contraseña2">
+                    <label for="password2"></label>
+                    <input type="password" name="password2" id="password2" placeholder="Contraseña" required>
+            <small class="error-text">introduce una Contraseña de más de 6 caracteres</small>
+            </div>
+
+            <div class="form box" id="grupo__contraseña3">
+                <label for="password3"></label>
+                <input type="password" name="password3" id="password3" placeholder="repetir contraseña" required>
+        <small class="error-text">No coincide con la contraseña anterior</small>
+        </div>
+        
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Siguiente</button>
+    
+            </div>
+                    </form>
+                    
+        </form>
+                </div>
+            </div>
+            
+        </section>
+            <script src="archivos/javascript/script.js"></script>
+</body>
+</html>
